@@ -8,6 +8,147 @@
   --light: #f8f9fa;
   --text-light: rgba(255, 255, 255, 0.8);
 }
+/* Add these to your existing styles.css */
+
+/* Light Theme Variables */
+:root {
+  /* Existing dark theme variables */
+  --light-primary: #4caf50;
+  --light-secondary: #8bc34a;
+  --light-accent: #cddc39;
+  --light-dark: #f8f9fa;
+  --light-dark-2: #e9ecef;
+  --light-light: #212529;
+  --light-text-light: rgba(33, 37, 41, 0.8);
+}
+
+/* Light Theme Styles */
+body.light-theme {
+  background-color: var(--light-dark);
+  color: var(--light-light);
+}
+
+body.light-theme .bg-dark-2 {
+  background-color: var(--light-dark-2);
+}
+
+body.light-theme .card,
+body.light-theme .service-card,
+body.light-theme .process-step {
+  background-color: var(--light-dark-2);
+  color: var(--light-light);
+}
+
+body.light-theme .text-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--light-primary),
+    var(--light-secondary)
+  );
+}
+
+body.light-theme .btn-primary {
+  background-color: var(--light-primary);
+  border-color: var(--light-primary);
+}
+
+body.light-theme .btn-primary:hover {
+  background-color: #3d8b40;
+  border-color: #3d8b40;
+}
+
+body.light-theme .btn-outline-light {
+  color: var(--light-light);
+  border-color: var(--light-light);
+}
+
+body.light-theme .btn-outline-light:hover {
+  color: var(--light-dark);
+  background-color: var(--light-light);
+}
+
+body.light-theme .icon-box.bg-purple {
+  background-color: var(--light-primary);
+}
+
+body.light-theme .icon-box.bg-pink {
+  background-color: var(--light-secondary);
+}
+
+body.light-theme .icon-box.bg-green {
+  background-color: var(--light-accent);
+}
+
+body.light-theme .portfolio-overlay {
+  background: rgba(76, 175, 80, 0.8);
+}
+
+body.light-theme .step-number {
+  background: var(--light-dark);
+  border-color: var(--light-primary);
+}
+
+body.light-theme .cta-section {
+  background: linear-gradient(
+    135deg,
+    var(--light-primary),
+    var(--light-secondary)
+  );
+}
+
+body.light-theme .navbar {
+  background-color: rgba(248, 249, 250, 0.9) !important;
+}
+
+body.light-theme .nav-link {
+  color: var(--light-light);
+}
+
+body.light-theme .nav-link::after {
+  background: linear-gradient(
+    90deg,
+    var(--light-primary),
+    var(--light-secondary)
+  );
+}
+
+body.light-theme .text-light {
+  color: var(--light-text-light);
+}
+
+/* Theme Toggle Styles */
+.theme-toggle .form-check-input {
+  width: 3em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+.theme-toggle .form-check-label {
+  cursor: pointer;
+}
+
+.theme-toggle .bi-sun-fill {
+  color: #f8f9fa;
+}
+
+body.light-theme .theme-toggle .bi-sun-fill {
+  color: #212529;
+}
+
+/* Smooth Theme Transition */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card,
+.navbar,
+.btn,
+.icon-box,
+.portfolio-overlay,
+.process-step {
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
 
 body {
   font-family: "serif", sans-serif;
