@@ -10,19 +10,19 @@
 }
 /* Add these to your existing styles.css */
 
-/* Light Theme Variables */
+/* Updated Light Theme Variables */
 :root {
-  /* Existing dark theme variables */
-  --light-primary: #4caf50;
-  --light-secondary: #8bc34a;
-  --light-accent: #cddc39;
-  --light-dark: #f8f9fa;
-  --light-dark-2: #e9ecef;
-  --light-light: #212529;
-  --light-text-light: rgba(33, 37, 41, 0.8);
+  --light-primary: #2e7d32; /* Deeper green for better contrast */
+  --light-secondary: #689f38; /* Softer green */
+  --light-accent: #9ccc65; /* Light lime accent */
+  --light-dark: #f5f5f5; /* Off-white background */
+  --light-dark-2: #e0e0e0; /* Slightly darker for cards */
+  --light-light: #212121; /* Dark gray for text */
+  --light-text-light: rgba(33, 33, 33, 0.8); /* Semi-transparent dark text */
+  --light-navbar: rgba(245, 245, 245, 0.95); /* Semi-transparent navbar */
+  --light-card-shadow: rgba(0, 0, 0, 0.1); /* Subtle shadows */
 }
-
-/* Light Theme Styles */
+/* Enhanced Light Theme Styles */
 body.light-theme {
   background-color: var(--light-dark);
   color: var(--light-light);
@@ -37,6 +37,7 @@ body.light-theme .service-card,
 body.light-theme .process-step {
   background-color: var(--light-dark-2);
   color: var(--light-light);
+  box-shadow: 0 4px 6px var(--light-card-shadow);
 }
 
 body.light-theme .text-gradient {
@@ -50,21 +51,23 @@ body.light-theme .text-gradient {
 body.light-theme .btn-primary {
   background-color: var(--light-primary);
   border-color: var(--light-primary);
+  color: white;
 }
 
 body.light-theme .btn-primary:hover {
-  background-color: #3d8b40;
-  border-color: #3d8b40;
+  background-color: #1b5e20;
+  border-color: #1b5e20;
 }
 
 body.light-theme .btn-outline-light {
-  color: var(--light-light);
-  border-color: var(--light-light);
+  color: var(--light-primary);
+  border-color: var(--light-primary);
+  background-color: transparent;
 }
 
 body.light-theme .btn-outline-light:hover {
-  color: var(--light-dark);
-  background-color: var(--light-light);
+  color: white;
+  background-color: var(--light-primary);
 }
 
 body.light-theme .icon-box.bg-purple {
@@ -80,12 +83,13 @@ body.light-theme .icon-box.bg-green {
 }
 
 body.light-theme .portfolio-overlay {
-  background: rgba(76, 175, 80, 0.8);
+  background: rgba(46, 125, 50, 0.85); /* More opaque for better readability */
 }
 
 body.light-theme .step-number {
   background: var(--light-dark);
   border-color: var(--light-primary);
+  color: var(--light-primary);
 }
 
 body.light-theme .cta-section {
@@ -97,11 +101,16 @@ body.light-theme .cta-section {
 }
 
 body.light-theme .navbar {
-  background-color: rgba(248, 249, 250, 0.9) !important;
+  background-color: var(--light-navbar) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 body.light-theme .nav-link {
   color: var(--light-light);
+}
+
+body.light-theme .nav-link:hover {
+  color: var(--light-primary);
 }
 
 body.light-theme .nav-link::after {
@@ -114,6 +123,43 @@ body.light-theme .nav-link::after {
 
 body.light-theme .text-light {
   color: var(--light-text-light);
+}
+
+body.light-theme .section-title {
+  color: var(--light-primary);
+}
+
+body.light-theme .hero-section {
+  background-color: var(--light-dark);
+}
+
+body.light-theme .orb-primary {
+  background-color: rgba(46, 125, 50, 0.2);
+}
+
+body.light-theme .orb-secondary {
+  background-color: rgba(104, 159, 56, 0.2);
+}
+
+body.light-theme .orb-accent {
+  background-color: rgba(156, 204, 101, 0.2);
+}
+
+body.light-theme footer {
+  background-color: #e8f5e9; /* Very light green */
+  color: var(--light-light);
+}
+
+body.light-theme footer a {
+  color: var(--light-primary);
+}
+
+body.light-theme hr {
+  background-color: #c8e6c9; /* Light green divider */
+}
+
+body.light-theme .stat-card {
+  background-color: transparent;
 }
 
 /* Theme Toggle Styles */
